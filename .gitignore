@@ -20,3 +20,6 @@ override.tf.json
 # Ignore les fichiers de journalisation CLI
 .terraformrc
 terraform.rc
+
+# Ignore le fichier de variable de mot de passe
+variables.tf
