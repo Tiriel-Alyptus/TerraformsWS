@@ -114,3 +114,5 @@ Activez l'authentification multi-facteurs (MFA) sur votre compte AWS.
 - Permet de centraliser la gestion des instances EC2, et des tâches réalisé vers AWS
 - M'a permis de comprendre l'utilisation des rôles IAM
 - Comprendre l'utilisation principale de Terraform & AWS CLI
+- Utiliser plusieurs providers
+- Rapidité d'utilisation
