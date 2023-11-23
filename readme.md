@@ -69,8 +69,8 @@ Le fichier de mon repo est préconfiguré.
 
     provider "aws" {
       region = "eu-west-3"
-      access_key = "AKIARDPIV56EDNXA4JXX"
-      secret_key = "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"
+      access_key = "*"
+      secret_key = "*"
     }
     
     resource "aws_instance" "DC3-HK-T3" {
