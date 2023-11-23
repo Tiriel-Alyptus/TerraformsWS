@@ -177,10 +177,16 @@ resource "aws_security_group" "HK_web" {
 
 # (Exo-4)
 Les nom des variables était en -, alors qu'elle devait avoir des "_"
+Les ID Ami ne sont pas déclaré
 
 # (Exo-5)
 - Créer un module Terraform pour définir un VPC.
 - Inclure des sous-réseaux, une passerelle Internet, et des groupes de sécurité.
   
-L'ingress de ec2-module était sur "0" pour le port.
+ec2-module était incomplet :
+- main.tf a été remplis avec le déploiement en exercice 3.
+- Les variables ont été match entre le VPC & l'instance EC2
+- L'IP Publique pour la machine ne se déclarait pas
+- Le module n'était pas appelé dans le main.tf
 
+Vérifier les fichiers pour comprendre les modifications
