@@ -1,4 +1,5 @@
 par **DECAUDIN Lorenzo**
+Pas de difficulté rencontré, j'ai l'habitude de debug, je suis DevSecOps & Pentester
 
 ## En premier-lieu : 
 
