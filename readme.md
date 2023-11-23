@@ -1,3 +1,5 @@
+DECAUDIN Lorenzo
+
 ## En premier-lieu : 
 
 ***Télécharger [AWS CLI](https://aws.amazon.com/fr/cli/)***
