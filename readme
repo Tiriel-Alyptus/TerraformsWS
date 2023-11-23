@@ -1,0 +1,46 @@
+AWS EC2 Deployment with Terraform
+Ce guide fournit des instructions étape par étape pour déployer une instance EC2 sur AWS en utilisant Terraform.
+
+Prérequis
+Terraform installé sur votre machine.
+AWS CLI installé et configuré avec vos identifiants AWS.
+Compte AWS avec les permissions nécessaires pour créer des ressources EC2.
+Configuration Initiale
+Installation de l'AWS CLI et Configuration des Credentials AWS
+
+Installez l'AWS CLI et configurez-le avec aws configure.
+Entrez vos AWS Access Key ID et AWS Secret Access Key.
+Spécifiez votre région AWS préférée et le format de sortie (optionnel).
+Création d'un Répertoire pour votre Projet Terraform
+
+Créez un nouveau répertoire sur votre machine pour stocker vos fichiers Terraform.
+Écriture du Code Terraform
+Fichier Principal (main.tf)
+Créez un fichier main.tf.
+Ajoutez la configuration du provider AWS.
+
+provider "aws" {
+  region = "us-west-2"
+}
+Définissez une ressource pour une instance EC2.
+
+resource "aws_instance" "example" {
+  ami           = "ami-xxxxxx"  # Remplacez par un ID d'AMI valide
+  instance_type = "t2.micro"
+}
+Déploiement avec Terraform
+Initialisation de Terraform
+
+Dans votre terminal, naviguez jusqu'à votre répertoire de projet et exécutez terraform init.
+Planification et Application
+
+Exécutez terraform plan pour prévisualiser les changements.
+Lancez terraform apply et confirmez pour créer l'infrastructure.
+Nettoyage
+Utilisez terraform destroy pour supprimer l'infrastructure lorsque vous avez terminé.
+Conseils de Sécurité
+Ne partagez jamais vos clés d'accès AWS.
+Utilisez des rôles IAM pour une gestion plus sécurisée des permissions.
+Activez l'authentification multi-facteurs (MFA) sur votre compte AWS.
+Support
+Pour toute assistance supplémentaire, consultez la documentation Terraform ou la documentation AWS.
