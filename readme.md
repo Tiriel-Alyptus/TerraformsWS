@@ -1,4 +1,5 @@
-DECAUDIN Lorenzo
+par **DECAUDIN Lorenzo**
+Pas de difficulté rencontré, j'ai l'habitude de debug, je suis DevSecOps & Pentester, les outils sont bien documenté.
 
 ## En premier-lieu : 
 
@@ -69,8 +70,8 @@ Le fichier de mon repo est préconfiguré.
 
     provider "aws" {
       region = "eu-west-3"
-      access_key = "AKIARDPIV56EDNXA4JXX"
-      secret_key = "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"
+      access_key = "*"
+      secret_key = "*"
     }
     
     resource "aws_instance" "DC3-HK-T3" {
@@ -114,3 +115,5 @@ Activez l'authentification multi-facteurs (MFA) sur votre compte AWS.
 - Permet de centraliser la gestion des instances EC2, et des tâches réalisé vers AWS
 - M'a permis de comprendre l'utilisation des rôles IAM
 - Comprendre l'utilisation principale de Terraform & AWS CLI
+- Utiliser plusieurs providers
+- Rapidité d'utilisation
